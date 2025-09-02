@@ -201,12 +201,14 @@ STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # CORS
+# CORS
 CORS_ALLOWED_ORIGINS = os.getenv(
     "CORS_ALLOWED_ORIGINS",
-    "http://localhost:5173,https://<your-github-username>.github.io"
+    "http://localhost:5173,https://manikandan-developer24.github.io"
 ).split(",")
 
 CORS_ALLOW_HEADERS = list(default_headers) + ["authorization"]
+
 
 # Django REST Framework + JWT
 REST_FRAMEWORK = {
